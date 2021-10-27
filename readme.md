@@ -11,6 +11,7 @@ I am building an app that allows a user to add/edit new tasks to check off of th
 ## Models
 
 connection - to keep the database connection in one place
+
 item.js - keeps track of model, schema
 
 ## Route Table
@@ -34,3 +35,12 @@ List your routes in a table
 - detail roadblocks and anything you did to overcome whether you did or didn't
 
 ## List of Technologies
+
+- connect-mongo
+- dotenv
+- express
+- express session
+- liquid-express-views
+- method-override
+- mongoose
+- morgan
