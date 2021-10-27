@@ -14,6 +14,14 @@ connection - to keep the database connection in one place
 
 item.js - keeps track of model, schema
 
+Model: BucketList
+
+- title: {type:String, required: true}
+- type: {type:String, required: true}
+- location: {type:String, required: false}
+- decription: String
+- check: Boolean
+
 ## Route Table
 
 List your routes in a table
@@ -29,6 +37,10 @@ List your routes in a table
 | destroy | /lists/:id      | delete | delete a particular entry (delete) |
 
 ## User Stories
+
+- user can create a bucket list entry
+- user can go back to main page to view all entries
+- user can edit/delete an entry on the show page
 
 ## Challenges
 
