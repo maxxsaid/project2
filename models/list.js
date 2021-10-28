@@ -13,6 +13,7 @@ const listSchema = new Schema({
   location: { type: String, required: false },
   decription: String,
   check: Boolean,
+  username: String,
 });
 
 const List = model("List", listSchema);

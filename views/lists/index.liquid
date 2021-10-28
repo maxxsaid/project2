@@ -1,12 +1,14 @@
 {% layout "layout.liquid" %} {% block content %}
 
-<div>
-  <a href="/lists/new"><button>New Entry</button></a>
+<div class="container center-align">
+  <h1>My List</h1>
+  <a href="/lists/new"><button class="waves-effect waves-light btn">New Entry</button></a>
+  <a href="/user/logout"><button class="waves-effect waves-light btn">Logout</button></a>
   {% for list in lists %}
   <article>
     <a href="/lists/{{ list._id }}">
       <h2>
-        {{ list.name }} - {% if list.check == true %} Complete {% else %}
+        {{ list.title }} - {% if list.check == true %} Complete {% else %}
         Incomplete {% endif %}
       </h2>
     </a>

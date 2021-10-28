@@ -7,6 +7,7 @@ const morgan = require("morgan");
 const methodOverride = require("method-override");
 const path = require("path");
 const ListsRouter = require("./controllers/list");
+const UserRouter = require("./controllers/user");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 
@@ -50,8 +51,9 @@ app.get("/", (req, res) => {
   res.render("index.liquid");
 });
 
-// Register Lists Router
 app.use("/lists", ListsRouter);
+
+app.use("/user", UserRouter);
 
 /////////////////////////////////////////////
 // Setup Server Listener
