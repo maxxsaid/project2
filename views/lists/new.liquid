@@ -1,0 +1,32 @@
+{% layout "layout.liquid" %} {% block content %}
+
+<div>
+  <form action="/lists" method="post">
+    <fieldset>
+      <legend>Create a New Bucket List</legend>
+      <label>
+        Title: <input type="text" name="title" placeholder="enter title" />
+      </label>
+      <label>
+        Type:
+        <input
+          type="text"
+          name="type"
+          placeholder="enter type of bucket list"
+        />
+      </label>
+      <label>
+        Location:
+        <input type="text" name="location" placeholder="enter location" />
+      </label>
+      <label>
+        Description:
+        <input type="text" name="description" placeholder="enter description" />
+      </label>
+      <label> Check: <input type="checkbox" name="check" /> </label>
+    </fieldset>
+    <input type="submit" value="create new list" />
+  </form>
+</div>
+
+{% endblock %}

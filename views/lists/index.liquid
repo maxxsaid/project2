@@ -1,0 +1,17 @@
+{% layout "layout.liquid" %} {% block content %}
+
+<div>
+  <a href="/lists/new"><button>New Entry</button></a>
+  {% for list in lists %}
+  <article>
+    <a href="/lists/{{ list._id }}">
+      <h2>
+        {{ list.name }} - {% if list.check == true %} Complete {% else %}
+        Incomplete {% endif %}
+      </h2>
+    </a>
+  </article>
+  {% endfor %}
+</div>
+
+{% endblock %}

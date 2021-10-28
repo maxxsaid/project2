@@ -1,0 +1,52 @@
+{% layout "layout.liquid" %} {% block content %}
+
+<div>
+  <form action="/lists/{{ list._id }}?_method=PUT" method="post">
+    <fieldset>
+      <legend>Edit {{ list.title }}</legend>
+      <label>
+        Title:
+        <input
+          type="text"
+          name="title"
+          placeholder="enter title"
+          value="{{ list.title }}"
+        />
+      </label>
+      <label>
+        Type:
+        <input
+          type="text"
+          name="type"
+          placeholder="enter type of bucket list"
+          value="{{ list.type }}"
+        />
+      </label>
+      <label>
+        Location:
+        <input
+          type="text"
+          name="location"
+          placeholder="enter location"
+          value="{{ list.location }}"
+        />
+      </label>
+      <label>
+        Description:
+        <input
+          type="text"
+          name="description"
+          placeholder="enter description"
+          value="{{ list.description }}"
+        />
+      </label>
+      <label>
+        Check: <input type="checkbox" name="check" {% if list.check == true %}
+        checked {% endif %} >
+      </label>
+    </fieldset>
+    <input type="submit" value="update {{ list.name }}" />
+  </form>
+</div>
+
+{% endblock %}

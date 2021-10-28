@@ -12,7 +12,7 @@ I am building an app that allows a user to add/edit new tasks to check off of th
 
 connection - to keep the database connection in one place
 
-item.js - keeps track of model, schema
+list.js - keeps track of model, schema
 
 Model: BucketList
 
