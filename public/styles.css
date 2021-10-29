@@ -49,3 +49,19 @@ footer {
 .form-label {
   margin: 20px auto;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  font-family: "Overlock", cursive;
+  font-size: 1.3em;
+  color: rgb(220, 53, 68);
+  text-decoration: underline;
+}
+.slogan {
+  margin: 20px;
+  font-size: 2em;
+  font-family: "Indie Flower", cursive;
+}
