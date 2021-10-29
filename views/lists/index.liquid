@@ -1,19 +1,27 @@
 {% layout "layout.liquid" %} {% block content %}
 
-<div class="container center-align">
-  <h1>My List</h1>
-  <a href="/lists/new"><button class="waves-effect waves-light btn">New Entry</button></a>
-  <a href="/user/logout"><button class="waves-effect waves-light btn">Logout</button></a>
-  {% for list in lists %}
-  <article>
-    <a href="/lists/{{ list._id }}">
-      <h2>
-        {{ list.title }} - {% if list.check == true %} Complete {% else %}
-        Incomplete {% endif %}
-      </h2>
-    </a>
-  </article>
-  {% endfor %}
+<div class="myList">
+  <h2>My List</h2>
+  <a href="/lists/new"
+    ><button type="submit" class="btn btn-outline-success">New Entry</button></a
+  >
+  <a href="/user/logout"
+    ><button type="submit" class="btn btn-outline-danger">Logout</button></a
+  >
+  <div>
+    {% for list in lists %}
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem">
+      <a href="/lists/{{ list._id }}" class="link-warning">
+        <div class="card-header">{{ list.title }}</div>
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">
+          {% if list.check == true %} Complete {% else %} Incomplete {% endif %}
+        </h5>
+        <p class="card-text">{{ list.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
-
 {% endblock %}

@@ -1,7 +1,13 @@
 {% layout "layout.liquid" %} {% block content %}
 <div>
-  <a href="/user/signup"><button>Signup</button></a>
-  <a href="/user/login"><button>Login</button></a>
+  <div>
+    <a href="/user/signup"
+      ><button type="submit" class="btn btn-outline-dark">Signup</button></a
+    >
+    <a href="/user/login"
+      ><button type="submit" class="btn btn-outline-dark">Login</button></a
+    >
+  </div>
   <div
     id="carouselExampleIndicators"
     class="carousel slide"
@@ -32,21 +38,21 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img
-          src="https://res.allmacwallpaper.com/get/macbook-air-wallpapers/Travel-Reward/6633-720.jpg"
+          src="https://pixabay.com/get/g66124ab210377edb4ec422fa045a8993f0396b3176ed9acc8fd34434b8d8ab9a66db4b2b81c5f9a07a5556365d85fe0470734e6dc5c2fe76cbe965f83bea9a440d0ea4185ce4d83790f21c7fc5377413_1280.jpg"
           class="d-block w-100"
           alt="image1"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="https://c4.wallpaperflare.com/wallpaper/815/655/820/skier-backpack-mountains-travel-wallpaper-preview.jpg"
+          src="https://pixabay.com/get/g5c105cdc60af871c02b67e122ce8c6ec317e2492a2e0d8086ee70fa207bc8dbc899327ea86902a8457b3725e8894a067bdadde1b774fc5e7fd0ea2ad36325b9a8e912df49ee97e0fc5da94155e4eeb33_1280.jpg"
           class="d-block w-100"
           alt="image2"
         />
       </div>
       <div class="carousel-item">
         <img
-          src="https://images.gludy.com/photos/0/mountains-55_950.jpg"
+          src="https://pixabay.com/get/g214c6dbceaf3cfc26600beaf107f413cda3a1f648e23bad7fe17871cf48b07e2728119bc125e08514dbfc99527a537007e130b5f51413b984069f7d39c74c412b679c014f3b4d352afeac9ee56d68d98_1280.jpg"
           class="d-block w-100"
           alt="image3"
         />
@@ -72,9 +78,4 @@
     </button>
   </div>
 </div>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-  crossorigin="anonymous"
-></script>
 {% endblock %}

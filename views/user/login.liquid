@@ -2,12 +2,32 @@
 <div>
   <form action="/user/login" method="post">
     <fieldset>
-      <legend>Login</legend>
-      <label> Username: <input type="text" name="username" required /> </label>
-      <label>
-        Password: <input type="password" name="password" required />
+      <legend>
+        <h2>Login</h2>
+      </legend>
+      <label for="inputUsername5" class="form-label">
+        <h4>Username</h4>
+        <input
+          type="text"
+          name="username"
+          required
+          id="inputUsername5"
+          class="form-control"
+          aria-describedby="usernameHelpBlock"
+        />
       </label>
-      <input type="submit" value="Login" />
+      <label for="inputPassword5" class="form-label">
+        <h4>Password</h4>
+        <input
+          type="password"
+          name="password"
+          required
+          id="inputPassword5"
+          class="form-control"
+          aria-describedby="passwordHelpBlock"
+        />
+      </label>
+      <input type="submit" class="btn btn-success" value="Login" />
     </fieldset>
   </form>
 </div>

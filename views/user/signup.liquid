@@ -2,12 +2,40 @@
 <div>
   <form action="/user/signup" method="post">
     <fieldset>
-      <legend>New User</legend>
-      <label> Username: <input type="text" name="username" required /> </label>
-      <label>
-        Password: <input type="password" name="password" required />
+      <legend>
+        <h2>New User</h2>
+      </legend>
+      <label for="inputUsername5" class="form-label">
+        <h4>Username</h4>
+        <input
+          type="text"
+          name="username"
+          required
+          id="inputUsername5"
+          class="form-control"
+          aria-describedby="usernameHelpBlock"
+        />
       </label>
-      <input type="submit" value="Create Account" />
+      <div class="pass">
+        <label for="inputPassword5" class="form-label">
+          <h4>Password</h4>
+          <input
+            type="password"
+            name="password"
+            required
+            id="inputPassword5"
+            class="form-control"
+            aria-describedby="passwordHelpBlock"
+          />
+        </label>
+        <div id="passwordHelpBlock" class="form-text">
+          Your password must be 8-20 characters long, contain letters and
+          numbers, and must not contain spaces, special characters, or emoji.
+        </div>
+      </div>
+      <button type="submit" class="btn btn-outline-dark" value="Create Account">
+        Create Account
+      </button>
     </fieldset>
   </form>
 </div>

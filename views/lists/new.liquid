@@ -3,29 +3,59 @@
 <div>
   <form action="/lists" method="post">
     <fieldset>
-      <legend>Create a New Bucket List</legend>
-      <label>
-        Title (required): <input type="text" name="title" placeholder="enter title" />
+      <legend>
+        <h2>Create a New Bucket List</h2>
+      </legend>
+      <label for="inputTitle5" class="form-label">
+        <h4>Title (required)</h4>
+        <input
+          type="text"
+          name="title"
+          placeholder="enter title"
+          id="inputTitle5"
+          class="form-control"
+          aria-describedby="titleHelpBlock"
+        />
       </label>
-      <label>
-        Type (required):
+      <label for="inputType5" class="form-label">
+        <h4>Type (required)</h4>
         <input
           type="text"
           name="type"
           placeholder="enter type of bucket list"
+          id="inputType5"
+          class="form-control"
+          aria-describedby="typeHelpBlock"
         />
       </label>
-      <label>
-        Location:
-        <input type="text" name="location" placeholder="enter location" />
+      <label for="inputLocation5" class="form-label">
+        <h4>Location</h4>
+        <input
+          type="text"
+          name="location"
+          placeholder="enter location"
+          id="inputLocation5"
+          class="form-control"
+          aria-describedby="locationHelpBlock"
+        />
       </label>
-      <label>
-        Description:
-        <input type="text" name="description" placeholder="enter description" />
+      <label for="inputDescritpion5" class="form-label">
+        <h4>Description</h4>
+        <input
+          type="text"
+          name="description"
+          placeholder="enter description"
+          id="inputDescription5"
+          class="form-control"
+          aria-describedby="descriptionHelpBlock"
+        />
       </label>
-      <label> Check: <input type="checkbox" name="check" /> </label>
+      <label for="inputCheck5" class="form-label"
+        ><h5>Check</h5>
+        <input class="form-check-input mt-0" type="checkbox" name="check" />
+      </label>
     </fieldset>
-    <input type="submit" value="create new list" />
+    <input type="submit" value="CREATE NEW LIST" class="btn btn-success" />
   </form>
 </div>
 

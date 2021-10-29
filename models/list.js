@@ -11,7 +11,7 @@ const listSchema = new Schema({
   title: { type: String, required: true },
   type: { type: String, required: true },
   location: { type: String, required: false },
-  decription: String,
+  description: String,
   check: Boolean,
   username: String,
 });

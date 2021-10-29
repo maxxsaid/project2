@@ -3,49 +3,64 @@
 <div>
   <form action="/lists/{{ list._id }}?_method=PUT" method="post">
     <fieldset>
-      <legend>Edit {{ list.title }}</legend>
-      <label>
-        Title:
+      <legend>
+        <h2>Edit {{ list.title }}</h2>
+      </legend>
+      <label for="inputTitle5" class="form-label">
+        <h4>Title (required)</h4>
         <input
           type="text"
           name="title"
           placeholder="enter title"
+          id="inputTitle5"
+          class="form-control"
+          aria-describedby="titleHelpBlock"
           value="{{ list.title }}"
         />
       </label>
-      <label>
-        Type:
+      <label for="inputType5" class="form-label">
+        <h4>Type (required)</h4>
         <input
           type="text"
           name="type"
           placeholder="enter type of bucket list"
+          id="inputType5"
+          class="form-control"
+          aria-describedby="typeHelpBlock"
           value="{{ list.type }}"
         />
       </label>
-      <label>
-        Location:
+      <label for="inputLocation5" class="form-label">
+        <h4>Location</h4>
         <input
           type="text"
           name="location"
           placeholder="enter location"
+          id="inputLocation5"
+          class="form-control"
+          aria-describedby="locationHelpBlock"
           value="{{ list.location }}"
         />
       </label>
-      <label>
-        Description:
+      <label for="inputDescritpion5" class="form-label">
+        <h4>Description</h4>
         <input
           type="text"
           name="description"
           placeholder="enter description"
+          id="inputDescription5"
+          class="form-control"
+          aria-describedby="descriptionHelpBlock"
           value="{{ list.description }}"
         />
       </label>
       <label>
-        Check: <input type="checkbox" name="check" {% if list.check == true %}
-        checked {% endif %} >
+        <h5>Check</h5>
+        <input class="form-check-input mt-0" type="checkbox" name="check" {% if
+        list.check == true %} checked {% endif %} >
       </label>
     </fieldset>
-    <input type="submit" value="update {{ list.name }}" />
+    <input class="btn btn-warning" type="submit" value="UPDATE" />
   </form>
 </div>
 
