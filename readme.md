@@ -1,6 +1,6 @@
 # Project 2
 
-## Bucket List App
+## Buckets
 
 #### By Max Said
 
@@ -16,11 +16,12 @@ list.js - keeps track of model, schema
 
 Model: BucketList
 
-- title: {type:String, required: true}
-- type: {type:String, required: true}
-- location: {type:String, required: false}
-- decription: String
-- check: Boolean
+- title: { type: String, required: true },
+- type: { type: String, required: true },
+- location: { type: String, required: false },
+- description: String,
+- check: Boolean,
+- username: String,
 
 ## Route Table
 
@@ -38,21 +39,27 @@ List your routes in a table
 
 ## User Stories
 
-- user can create a bucket list entry
-- user can go back to main page to view all entries
+- user can signup/login
+- user can create their own bucket list entry
+- user can click on the name of their entry to the show page of that entry
 - user can edit/delete an entry on the show page
+- user can go back to the index page to view all entries
+- user can go back to home page by clicking the logo
 
 ## Challenges
 
-- detail roadblocks and anything you did to overcome whether you did or didn't
+- making the website responsive
+- adding the right images to the carousel
+- user being able to add their own images (images weren't showing up)
 
 ## List of Technologies
 
-- connect-mongo
-- dotenv
-- express
-- express session
-- liquid-express-views
-- method-override
-- mongoose
-- morgan
+- "bcryptjs": "^2.4.3",
+- "connect-mongo": "^4.6.0",
+- "dotenv": "^10.0.0",
+- "express": "^4.17.1",
+- "express-session": "^1.17.2",
+- "liquid-express-views": "^1.0.8",
+- "method-override": "^3.0.0",
+- "mongoose": "^6.0.12",
+- "morgan": "^1.10.0"
