@@ -10,6 +10,9 @@ h1 {
   font-family: "Henny Penny", cursive;
   text-align: center;
 }
+.link-dark {
+  text-decoration: none;
+}
 h2 {
   font-family: "Overlock", cursive;
 }
@@ -24,23 +27,13 @@ button {
   font-size: 1.5em;
 }
 
-img {
-  height: 500px;
-  width: auto;
-  margin: 20px auto;
-}
-
 footer {
-  text-align: center;
+  text-align: end;
+  font-family: "Indie Flower", cursive;
   margin: 30px auto;
-  color: white;
-  background-color: rgb(36, 33, 33);
-  padding: 10px;
-}
-
-#carouselExampleIndicators {
-  height: 500px;
-  width: auto;
+  font-size: 1.3em;
+  color: rgb(36, 33, 33);
+  padding: 50px 40px 10px 30px;
 }
 
 .btn {
@@ -64,4 +57,9 @@ li {
   margin: 20px;
   font-size: 2em;
   font-family: "Indie Flower", cursive;
+}
+
+.carousel-item {
+  width: 100%;
+  height: auto;
 }
